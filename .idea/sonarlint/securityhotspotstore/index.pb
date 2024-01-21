@@ -9,3 +9,7 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+Z
+*.github/workflows/maven-wrapper.properties,3/5/35df2ba2f63257c9b2d0537f730388b9ca247923
+V
+&.mvnw/wrapper/maven-wrapper.properties,0/f/0f2897c8d9bc45bdcc11aa359e9af3f19d02f99b
