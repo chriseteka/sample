@@ -13,3 +13,7 @@ Z
 *.github/workflows/maven-wrapper.properties,3/5/35df2ba2f63257c9b2d0537f730388b9ca247923
 V
 &.mvnw/wrapper/maven-wrapper.properties,0/f/0f2897c8d9bc45bdcc11aa359e9af3f19d02f99b
+U
+%.mvn/wrapper/maven-wrapper.properties,3/2/32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
+4
+mvnw,5/d/5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
