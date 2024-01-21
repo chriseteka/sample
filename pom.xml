@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.chriseteka.sample</groupId>
   <artifactId>sample</artifactId>
-  <version>1.0</version>
+  <version>0.0.1</version>
   <name>Archetype - sample</name>
   <url>https://github.com/chriseteka/sample</url>
   <description>Sample App</description>
