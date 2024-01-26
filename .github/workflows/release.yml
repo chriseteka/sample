@@ -31,6 +31,11 @@ jobs:
           gpg-private-key: ${{ secrets.JRELEASER_GPG_SECRET_KEY }}
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
+      - name: Prepare GPG
+        run: |
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          gpgconf --reload gpg-agent
+
       - name: Publish to Apache Maven Central
         run: ./mvnw -Prelease deploy
         env:
