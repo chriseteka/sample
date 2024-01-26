@@ -22,6 +22,8 @@ jobs:
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
+        env:
+          GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
         with:
           distribution: 'temurin'
           java-version: '11'
@@ -37,6 +39,7 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
+          GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
 
 #      - uses: actions/checkout@v3
 #      - name: Set up Java
