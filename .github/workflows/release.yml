@@ -22,16 +22,14 @@ jobs:
 
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
-        env:
-          GPG_PASSPHRASE: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
         with:
           distribution: 'temurin'
           java-version: '11'
           server-id: maven
-          server-username: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
-          server-password: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_CENTRAL_TOKEN
           gpg-private-key: ${{ secrets.JRELEASER_GPG_SECRET_KEY }}
-#          gpg-passphrase: ${{ secrets.JRELEASER_GPG_PASSPHRASE }}
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
       - name: Publish to Apache Maven Central
         run: ./mvnw -Prelease deploy
